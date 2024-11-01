@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>나만의 당근마켓</title>
+    <link rel="stylesheet"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        .container {
+            margin: 0 auto;
+            padding: 0 100px;
+        }
+
+        /* 카드에 확대 효과 추가 */
+        .hover-zoom {
+            transition: transform 0.3s ease;
+            /* 마우스 오버 시 부드러운 확대 효과 */
+            overflow: hidden;
+            /* 카드 크기를 유지 */
+            position: relative;
+            /* 카드가 다른 요소와 겹치지 않도록 설정 */
+            will-change: transform;
+            /* 브라우저에서 렌더링 최적화 */
+        }
+
+        /* 카드에 마우스를 올렸을 때 확대 */
+        .hover-zoom:hover {
+            transform: scale(1.50);
+            /* 마우스 오버 시 1.05배 확대 */
+        }
+
+        /* 이미지 크기 고정 및 비율 유지 */
+        .custom-img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero bg-dark text-center py-5">
+        <h1 class="text-white">나만의 당근마켓</h1>
+        <h2 class="text-white">집에 있는 물건을 팝니다!</h2>
+    </div>
+
+    <div class="container my-5" style="max-width: calc(100% - 200px);">
+        <div class="row">
+            <!-- 카드 1: 자전거 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="자전거.jpg" class="card-img-top custom-img" alt="자전거">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://www.naver.com" target="_blank">자전거</a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">20만원</h6>
+                        <p class="card-text">출퇴근용으로 한 달 동안만 사용한 자전거입니다. 상태 매우 좋아요!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 카드 2: 냄비 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="냄비.jpg" class="card-img-top custom-img" alt="냄비">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://www.naver.com" target="_blank">냄비</a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                        <p class="card-text">한 번 밖에 안 쓴 냄비 팝니다. 부모님이 독립할 때 주신 거예요!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 카드 3: 소파 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="소파.jpg" class="card-img-top custom-img" alt="소파">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://www.naver.com" target="_blank">소파</a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">15만원</h6>
+                        <p class="card-text">편안한 2인용 소파입니다. 공간이 부족해서 내놓습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 카드 4: 소파 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="소파.jpg" class="card-img-top custom-img" alt="소파">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://www.naver.com" target="_blank">소파</a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">15만원</h6>
+                        <p class="card-text">편안한 2인용 소파입니다. 공간이 부족해서 내놓습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 카드 5: 소파 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="소파.jpg" class="card-img-top custom-img" alt="소파">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://www.naver.com" target="_blank">소파</a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">15만원</h6>
+                        <p class="card-text">편안한 2인용 소파입니다. 공간이 부족해서 내놓습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 카드 6: 소파 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="소파.jpg" class="card-img-top custom-img" alt="소파">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://www.naver.com" target="_blank">소파</a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">15만원</h6>
+                        <p class="card-text">편안한 2인용 소파입니다. 공간이 부족해서 내놓습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        /* 이미지 크기를 균일하게 설정 */
+        .custom-img {
+            height: 200px;
+            /* 원하는 높이로 조정 가능 */
+            object-fit: cover;
+        }
+    </style>
+
+
+</body>
+
+</html>
